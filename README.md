@@ -68,28 +68,27 @@ Calculate The distance  |(img1)^2 - (img2)^2| of two images in L1Dist class
 
 Model: "SiameseNetwork" 
 Here activation is sigmoid
-__________________________________________________________________________________________________
- Layer (type)                   Output Shape         Param #     Connected to                     
-==================================================================================================
- input_img (InputLayer)         [(None, 100, 100, 3  0           []                               
-                                )]                                                                
-                                                                                                  
- validation_img (InputLayer)    [(None, 100, 100, 3  0           []                               
-                                )]                                                                
-                                                                                                  
- embedding (Functional)         (None, 4096)         38960448    ['input_img[0][0]',              
-                                                                  'validation_img[0][0]']         
-                                                                                                  
- distance (L1Dist)              (None, 4096)         0           ['embedding[2][0]',              
-                                                                  'embedding[3][0]']              
-                                                                                                  
- dense_1 (Dense)                (None, 1)            4097        ['distance[0][0]']               
-                                                                                                  
-==================================================================================================
-Total params: 38,964,545
-Trainable params: 38,964,545
-Non-trainable params: 0
-__________________________________________________________________________________________________
+
+|Layer (type)                 |  Output Shape        | Param #  |   Connected to                      |   
+|-----------------------------|:---------------------|:---------|-------------------------------------|
+| input_img (InputLayer)      |   [(None, 100, 100, 3|  0       |    []                               |    
+|                             |   )]                 |          |                                     |    
+|                             |                      |          |                                     |    
+| validation_img (InputLayer) |   [(None, 100, 100, 3|  0       |    []                               |    
+|                             |   )]                 |          |                                     |   
+|                             |                      |          |                                     |  
+| embedding (Functional)      |   (None, 4096)       |  38960448|    ['input_img[0][0]',              | 
+|                             |                      |          |     'validation_img[0][0]']         |
+|                             |                      |          |                                     |
+| distance (L1Dist)           |   (None, 4096)       |  0       |    ['embedding[2][0]',              |
+|                             |                      |          |     'embedding[3][0]']              |
+|                             |                      |          |                                     |
+| dense_1 (Dense)             |   (None, 1)          |  4097    |    ['distance[0][0]']               |
+|                             |                      |          |                                     |
+|=============================|======================|==========|=====================================|
+|Total params: 38,964,545
+||Trainable params: 38,964,545
+|Non-trainable params: 0
 
 
 # 4. TRAINING
