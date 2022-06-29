@@ -25,7 +25,7 @@ For training 70% data are user and the left 30% used in validation.
 
 # 3. Model Engineering
 In the modeling phase these processes are used.
-[!(https://github.com/Sakifneoworld/Face-Recognition-using-One-Shot-learning-technique-and-Siamese-Network/blob/main/images.png)]
+![](https://github.com/Sakifneoworld/Face-Recognition-using-One-Shot-learning-technique-and-Siamese-Network/blob/main/images.png)
 
 
 Model: "embedding"
