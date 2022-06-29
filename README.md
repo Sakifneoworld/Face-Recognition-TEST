@@ -34,33 +34,34 @@ Model: "embedding"
 | col 3 is      | right-aligned | $1600 |
 | col 2 is      | centered      |   $12 |
 | zebra stripes | are neat      |    $1 |
-_________________________________________________________________
-| Layer (type)                Output Shape              Param #   
-|-----------------------------------------------------------------
-| input_image (InputLayer)    [(None, 100, 100, 3)]     0         
-|                                                                 
-| conv2d (Conv2D)             (None, 91, 91, 64)        19264     
-|                                                                 
-| max_pooling2d (MaxPooling2D  (None, 46, 46, 64)       0         
-| )                                                               
-|                                                                 
-| conv2d_1 (Conv2D)           (None, 40, 40, 128)       401536    
-|                                                                 
-| max_pooling2d_1 (MaxPooling  (None, 20, 20, 128)      0         
-|2D)                                                             
-|                                                                 
-| conv2d_2 (Conv2D)           (None, 17, 17, 128)       262272    
-|                                                                 
-| max_pooling2d_2 (MaxPooling  (None, 9, 9, 128)        0         
-| 2D)                                                             
-|                                                                 
-| conv2d_3 (Conv2D)           (None, 6, 6, 256)         524544    
-|                                                                 
-| flatten (Flatten)           (None, 9216)              0         
-|                                                                 
-| dense (Dense)               (None, 4096)              37752832  
-|                                                                 
-|=================================================================
+
+
+| Layer (type)                |Output Shape              |Param #  |
+|-----------------------------|:-------------------------|:-------:|
+| input_image (InputLayer)    |[(None, 100, 100, 3)]     0         |
+|                             |                                    |
+| conv2d (Conv2D)             |(None, 91, 91, 64)        19264     |
+|                             |                                    |
+| max_pooling2d (MaxPooling2D | (None, 46, 46, 64)       0         |
+| )                           |                                    |
+|                             |                                    |
+| conv2d_1 (Conv2D)           |(None, 40, 40, 128)       401536    |
+|                             |                                    |
+| max_pooling2d_1 (MaxPooling | (None, 20, 20, 128)      0         |
+|2D)                          |                                    |
+|                             |                                    |
+| conv2d_2 (Conv2D)           |(None, 17, 17, 128)       262272    |
+|                             |                                    |
+| max_pooling2d_2 (MaxPooling | (None, 9, 9, 128)        0         |
+| 2D)                         |                                    |
+|                             |                                    |
+| conv2d_3 (Conv2D)           |(None, 6, 6, 256)         524544    |
+|                             |                                    |
+| flatten (Flatten)           |(None, 9216)              0         |
+|                             |                                    |
+| dense (Dense)               |(None, 4096)              37752832  |
+|                             |                                    |
+|=============================|====================================|
 |Total params: 38,960,448
 |Trainable params: 38,960,448
 |Non-trainable params: 0
