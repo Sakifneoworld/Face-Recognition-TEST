@@ -91,7 +91,7 @@ Here activation is sigmoid
 |Non-trainable params: 0
 
 
-# 4. TRAINING
+# 4. Training
 In training EPOCHS is 50
 binary cross loss = 0.0001
 * Record all of our operations
